@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 전체 영역 */
+        body {
+            /* 스타일 속성 : 값 */
+            margin: 0;
+            background: #f5f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            height: 100vh;
+        }
+
+        main {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 30px 26px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-style: 24px;
+        }
+
+        /* 입력 필드 영역 */
+        .field {
+            margin-bottom: 18px;
+        }
+
+        .field label {
+            display: block;
+            font-style: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 12px 14px;
+            font-style: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-style: 14px;
+        }
+
+        .actions a {
+            color: #5b6b94;
+            text-decoration: none;
+        }
+        .loginBox .btn {
+            width: 100%;
+            padding: 12px 14px;
+            background: #2b6cff;
+            color: white;
+            border: none;
+            background-repeat: 8px;
+            font-style: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .joinBox {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .joinBox .small {
+            font-style: 14px;
+            color: #666;
+        }
+
+        .joinBox a {
+            color: #2b6cff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>로그인</h1>
+
+        <form action="" id="loginForm">
+            <div class="field">
+                <label for="username">아이디</label>
+                <input type="text" id="username" name="username" placeholder="아이디를 입력해주세요." required>
+            </div>
+
+            <div class="field">
+                <label for="passward">비밀번호</label>
+                <input type="password" id="passward" name="passward" placeholder="비밀번호를 입력해주세요." required>
+            </div>
+
+            <div class="actions">
+                <label for="rememeberId">
+                    <input type="checkbox" name="rememeberId" id="rememeberId"></input>
+                    로그인 유지
+                </label>
+                <a href="" id="forgotPassword">비밀번호를 잊으셨나요?</a>
+            </div>
+
+            <div class="loginBox">
+                <button class="btn" type="submit">로그인</button>
+            </div>
+
+            <div class="joinBox">
+                <p class="small">아직 계정이 없으신가요? <a href="">회원가입</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
