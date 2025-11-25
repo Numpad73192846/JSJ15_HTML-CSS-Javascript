@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 태그</title>
+</head>
+<body>
+    <!-- 
+        <img>
+        - src           : 이미지 파일 경로
+        - width/height  : 가로/세로 크기 지정
+        - alt           : 대체 텍스트
+        - border        : 테두리 굵기 지정 (px)
+    -->
+    <h1>이미지 태그</h1>
+    <h2>로컬 이미지 불러오기(상대 경로)</h2>
+    <div>
+        <h2>티셔츠</h2>
+        <img src="img/티셔츠.jpg" alt="티셔츠" width="100" height="100" title="티셔츠" />
+    </div>
+
+    <div>
+        <h2>바지</h2>
+        <img src="img/바지.jpg" alt="바지" width="100" height="100" title="바지" />
+    </div>
+
+    <div>
+        <h2>신발</h2>
+        <img src="img/신발.jpg" alt="신발" width="100" height="100" title="신발" />
+    </div>
+
+    <hr>
+
+    <h2>로컬 이미지 불러오기(절대 경로)</h2>
+
+    <div>
+        <h2>티셔츠</h2>
+        <img src="C:/JSJ_15/Programing/WEB/JSJ15_HTML-CSS-Javascript/HTML/02.기본태그/img/티셔츠.jpg" alt="티셔츠" width="100" height="100" title="티셔츠" />
+    </div>
+
+    <hr>
+
+    <h2>이미지 URL로 지정하기(절대 경로)</h2>
+
+    <div>
+        <h2>내가 좋아하는 이미지</h2>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExMWFhUXFRcXGBcYFhUXFxcXFRUXFxcXFhUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyYtLS8tMi81Ky0vLy0tLS0vLy0tLS0vLS0tLS0vLS0tLSstLS0tLS0tLS0tLS0tLS0tLf/AABEIAOYA2wMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCAwYBBwj/xABAEAABAwEFBQUFBgUDBQEAAAABAAIDEQQFEiExQVFhcYEGMpGhsRMiUsHRB0JicoKSFDOi4fAWI9IkU6OywhX/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQQCAwUG/8QALhEAAgIBAwIDCAIDAQAAAAAAAAECAxEEEiExQQUTUSIyQlJhcZGxFKHB0fAj/9oADAMBAAIRAxEAPwD7iiIgCxkkDRVxAG8qovW/2RA0IJ37P7riLz7TySkiMEnfrTluUpNvCHTlnd2u/Y2VzHNxoOg1PhTiqC2dtGitHH9IA83VquFtMdpfmWnxCqrSyRho8Ec9OhWbpmuWjFWQfCZ20/bU7K04vefmtVm7WOe6g2amrtPFcOSp9xav6ei02+zBtFvS1qy1RfQ7yPtJTa7o5w+alw9qR8bhzo71FT4rjXLWVSVsvU7ctBS+x9MsfaNrtaH8poR+k/KquoJ2vGJpBH+a7l8bZMQcir+5b7cx2Ia7RscNx47it8Ls8Moajw7as1/g+kotNjtTZWB7TUHyO0HitysHKCIiAIiIAiIgCIiAIiIAiIgCIiALke03aZsYIByzy0xc+Cl9r749jG8A6Ch4k7OVCCeYXykSOnmAcSamp5DMqYrc8ImXsx3MtmY7QcchIbsGhP0Cky2uKHIkN4DM+AUe9rd7KP3e8TQcN5VNd92Pmq8uoCe8cySunFKv2YLLOe27Pam8I6CC9oXGgfnxBHqpVoga9pa4VBXJ3ndboaEkOacq6UPEKwum+mtjwyuzbkNSSFnG152zWDCVSxug8lVeFlMUhYdNWnePqs7lfSRw3tB8D/dbr7vFk2HCHVB1Ipkdig2N9JmHfVviP7LnauEcNROr4fZJWRcvU6Bywcs3LBy4x61msrbZ30K1FetKyMGjv+xdvq90R+83GObaNd5YSuuXyu5bZ7OWKT4XitdML/cd5Or0X1RXa3mJ5zWV7LX9eQiIthVCIiAIiIAiIgCIiAIiIAiIgPl3bOcvDwD8RrvNSuU7PZzfpPyXU39HQlvMZaZZLhWPcwnCaEVb0rT5KNLPFjyXNdVmiDj6YLXtLJV7BXRp8aq9uoj2MeHTCFxQUuyW+SMUY6g3EVXQhet7bOROh7EkdF2ilAhIOrqADjVcuspp3POJ7iTx+S1e2GzPkK+i132qbybtPS4LHczWD3Uo7c5p8wtrIJHaRnqfoszdUrhQ4R5/NVZWw7svQ0tz5UWX5WDli0PoBQabyha/8PmuYemzweFYr0sf+HzWDi4Zlo8R81JjkmQZgjeKeK+qdnrYZrNE86ltD+ZvunzBXxyzXnGfvU4UP0X0LsLeAbHIxwdTEHsOF3vB4zplvG3eFYpljhnJ8ShlKSOyRQHXl8MbupaNumpPkvDbnfCB1J+QWUtTVHrJHKUJPsWCKsFsk/BX8p/5LGS2y0NMFdlWup/7LD+bR837MvKl6Fqi+TS/atPHI5j4YzheWmmIVwmhpVxporS7/tZs7jSWJ7OLaO8RlxVlPKyaz6Kiqbm7SWW1fyZmuOfu1o7L8JzVspAREQBERAEREB897WwUkf8Amr+6jvUlfOrzjwyHjn8ivrXbOzEuDqZFlOrSa16OC+fWq55LQQIxm05uOjQd5+Sr52WZOtGPnaXHdHNl4H01KmWa7ZZNG4RvOvguuu7s3HCPidtcfluClPjAUz1D+EU6CPWbyc3DcDB3quPH6KfHY2t0aAp7gtdFWlJvqzpwhCHupI0YF5hW1y1ueFibcmBasSF4+YDbRLJFLOaQxl2zGcmD9W3oobS5ZEpKKyzXI+nM5ADMk7gNqu7D2O9sK2lzg00/2mGm2vvuGZ5Cit7l7Psg99xxykULjoODRsCtg6ip26l9IHNv1O72Y9DXYLms8P8ALiY3jhGI0zzccypyrJb0a00cHDiQaeIXn/68fxDzVN7pctlRpvktKrEuVU6+Y/i8lHkvxuwEqNpKgy7L1Avq8hBBJKT3Wk9dAPFVE9+nYABxXzztdfs9ueLPZw+Rozd7NpdVw/KNBlnxVjT6d2TS7dzGfsLLOcnmxOc46kknmTUrQ6do2rp7p+y+8Z+9G2Fu+VwH9LcTvEBd7cP2PWWL3rTI6d3wisceu4HEfHevRoonzLsrclqt0rW2ZrmgOznOIMjpnXGPvbmg15aj9GXVZXRQxxvkdK5rA10ju88gZuPNbbJZWRMEcbGsYMg1oDQOQC3KSAiIgCIiAIiICn7T2fFG0gVIe0dJCG58Klp6KALE2CMMHM8XHU/5uV1bpRUNOg993Id0dSD+1cffd+MBOar3NF7RxnPhdDy1yKrmtAWUdjtVo95rMLPiecI/br5bVOu7szE6pklMhBzDDhaOGWZ6lUbLox6nUd1cOG/wUUtuFabd21ZxWWeTuQvPEjCPF1F3NiuyGLuRsbxAz8dVMKqy1nyo1S1r+FHEw9l7S7vGNmmpLj5KZF2N+Odx4MaG5czVdYvCtD1Vj7mh6q19yls3Zeysz9mHne84s8tK5DRWwaBkBQLy02hkbS97g1o1c4gAcyVSwdsLC9+BtqixVoBWleRORWH/AKWc8s0ObfvMuHLW5bCarW5QiTB7A4FpFQRQqDF2ZY+QgSOa0tq0UBOtHZ7tPFT1uZJhwu+Fw8He671r0VvSOPmJSWUa5uSjwyH/AKMZ/wB5/g1bWdjYcqySnSubADv0bWnVdIi7aprXSK/BWds33ZTx9mLIBQwtfr36vGfB1QrWGFrBRrQ0bgAB4BZotqWDDIREQBERAEREAREQBERAcFap7XbXujhidEzEQ+WQFoBGVADmaUAyGu5SrruGKGh/mSbZHbfyg91dhM+jSeCoJXUB8vkuZ4i1GKx1bLdVsmtvY5v7Rr0dBYAGEh0ziK6EAkuOfKniqS4bvisEFhtTZXGW0yMY9mKrXCXLu/hqM1J+1+zn2UA2NDhwrRvyquK+zy6ZLTbIiS4xwHGaklraZtA2Cp9FlSoRoeTVLLlwfdQvSvAvSuEWD1CvAUCA4GS22a23rLZbW4exgaBHG52Fj5Mi8u3kZUFV86+0aw2WG2vZZCDHhaSGnE1riPeaDu08Vd/ap2ZfHaXWprSYpaFxA7jwADXcDka81w1ns2JwBIA3r0eklDyY7f8AmVZp7j6r9kV9vex9lkcXezAcwnUNJoW8h819CeuC+y+4TEZLQQWtc0MYDWpANS4V2aUXcTWljTQvaDuJC5Or2u17SzBPaZLJ4qx4/CfRYNcDmDVbmDIrVU8STJkuC7s8mJrXb2g+Iqtig3JJigZwGH9pLfkpy9MUQiIgCIiAIsJJGtzcQOZA9VGdeLNmJ3Jp9TQKHJLlgmIq19vedGhu4k4j+0U9VqdK86vPJvujPz81VnraY/Fn7GxVyZaveAKkgDeTRR3XhGMgSTwBI1prp5qtETdaVO85nxK2KrPxRfDH8mao9Wb3Xg491lPzH5DptVfJe1oqcMbXCtAcLs6ZfEpBKnXUwiJldSK/uJd81t0WosucnLojGyCj0PbzlayJ7nGjQ0kncBqVxkXaOzzSexjkxOzcQNMLc9fBX3b15F32gj4KdC4A+RK+N/Z2f+rIoDWGTfl3Tl6LfqKI2Yk+xNEsSS9T6iLIy1RGOZuMB23xGezVTbruuGzswQsDG65bTvJ2qHcjs3jkfUfRW4XDvbUmuxdtilNmYUB9ln9uHicCEDOLA0kn85zC3m2sGrs92dfDVeC0OOYjOHnR3MNOxV02jU0SF6FH/jGbThO5wI9VtilDtK030I9VDJPZGBwIIBB1BFR4Kqb2csgdjFniDt+AK2KxKmMmujIKe+rWW0iYaEipI2N0y4lUwiG7xzJ5kqRbXVmkO5wb0DR9StRXSpioxR1tPWowTM7HaTEfwfeG7iF00RyrwXKFdLYTSFtdcDfQLG2KymVtZBLEkWlwuHsQBsfIP/I4/MKxXO3HaiwSe4TWQkGoA7rRrrs3Kc+0yHaGjc0VPifoum9XTCK3SOR5cs9C0UV94RjR2I7m+96aKudED3qu/Ma+Wg6LMKpZ4pFe5HP3MlS+5IfeDj3WU4uPPYK+oWl8rzq8jg0ADx1814ipWeIXS6PH2NiqijARAbM95zPiVmvEVRylJ5k8mxIIiISEREBptZ9wganIc3ZD1V3EzC0N3ADwCpnNxPjadrx4NBd8grxdzw2OKm/Vla5+0U/bCz+0sNpbl/Jec97RiHovz32evYWa1wyO7uLC81oA14wkk7hWvRfptwqKL4LYfswtM1vlhe0x2aOQgzfFHqwRA95xaRnmGmtdKHoSWVg1xeHk+k3ZQSmmYcyoI0IqKEb1cBYw3MyzhjYwcAbgAJLqUG850yWwtouDranGZedys5PAslisgqDRiwvURQDErErIrErJEnNXtFgmJ+6+hB/EBQjyCjFdNaoGvaWuFQVXC6GD7zyN1fnSqu13pRwy9VqVGOJFZZoS92EdeAXQWmQNbReQxNaKNFAoluhOtahQ7N8ivdb5j+hLuV9WO/OfQKwVLcM4Dns25OHHIBXSrXrE2aGERFqARF4gCIiyJCIiAIiID2xCs43NjJ6ucAPIOVuq26G5yO3uDR+kfVx8FZL0ukjtpivp++SnY8yYREVgwIlploeXqeH+aqCZTtFfVbrQc+pPn/Zai1cDXXN2tdkWqopRMGytOh6HI+BWdVX3kw5HYMid1aU6KOHuG0qm8M3KJcYkLgqn27t68Mp3rHBOwtDIFqdaW71X5lSrDZ88RHIfOilINJGXvO4BbBFRSAFhIUyRkjlVl42z3sA0GqnWiXC0lc06SpJ3rfT1JjHJf3BCHvkbUB2Brm8C1xzHiAeas4n1FdDtG0EZEHqqXs7IBaGVOoc3qRXX9K6G3xYX4gPddkeDth66dBvXRvp82hSXVFfO2xo1rVaZsIBpWpA1oBXKpO5bVhIwOBadCKLjxxuTl0NrNwssvws/ef8AisnWSTYG/uI/+Vtui0FzMLu8z3Txpo7qPmpy9BHRadpNR/t/7KvmTXcrf4N/4f3H/isXWKXZg8XfRWiLL+FR8v7I8yXqVX8FLvj/AKvovP4KbfH/AFfRWyJ/Co+X9jzJepVssUu3B0LvovXWKTZg6l30VmifwqPl/Y8yXqRrvsxjZhJBJJJI0q4k+WQ6KSiKyljgwCIikFTaTmOvqUC8tuTiNx8jn9R0XjCvN6yOLpFyHuowmjDgQdCFEsrKih1acJ6bfCinFQ25SkfE2vVuR8iFWRsRmbMEFmC3oSgyzSYhWnU8t3VSAtNmzGL4s+mzyW9G+xDDio0rlskcoVsnDGklSkEisvm0/cHVVwZoNuvRGVkfxJVibMGDjvVmLUI/Vm3pwRYp8Dw+lcDmupyOflVfQp4g9padD/gI4r5u7Mkb8l1dkkc+Nhc8n3RkDQabaa9Ve0+qhVV7RXvrbkmjbE7UGlWktNNKjctixa0DICiyXJm05NxWEZLoa2yezka/7pox/In3XdD5FXipJGBwLToRQqbdFoLmYXH32HC7j8Luop5rs+HXbo+W+36K90cPJOREXSNIREQBERAEREARFhLIGgk7EBWXk4Y6bSMzsqMwOdPktETlhbXFw41r+r6bFrhkqAd/kdoXn9ZNWWNouVrESbVQLW6j4zvdTxafopbXKFbnVfGwa4sXIN19adVTiuTYicFqtGdG7znyGv06rNaC6kme1uXQ5+qIEpq8e5eFy1PcmCDCR65u9rZjNBoFMvi309xp5lR7ou/GfaPHug5AjvHea7Fsiu7NkVhZZMuexYW43d46cG/VZW1WJVfbAjeXkxTyylfqunuV9YgNxcPPLyIXMyjNXvZ97jija2pri1AFCGg1K2xrlZHbFZZla0lllvVFtjsEh7zmt4AFxpT4iRt4Lc262feLnc3EDZsbQbFvh4ba/eaX9lV3LsQXTNGrh49NOqzsId7UPa12EgteSMIpQlpocyainVWsUDW91oHIALYr1GhjVLdltmuVrksBERXjUEREAREQBERAFAvGWmW71OnzU9VF4nM8/QAKvqp7Km0Z1rMiESo8jsBr9068Dv5LevV57PJcNb7Y1rcRcKb6+m9Rrve6WT2pGFgBa0EZmtKuPgFjHdEQfjptqB90HeArIOTjsZcGyqj2ppB9o3PCDUbxWppxW4OTEsSDRHamuFWuBHNVt6XoGghpz37Ap1ssEclC4Go2g0PkoljuVrHl5cXAd0H7vPeVKwSsdyJdl1F9JJdNQ06ncXcOCvCsiVijeSG8nhUG1FSpZQFWWmdSiYor7Rqpd23iIX4jsDXcwateD0A8AoMr6lYuGY/L6H+6sUTcOV2Nk47o4Z9QBXqoeyFuxxeyJ96OgHFh7p47R0V8vQRkpJNHLaw8MIiKSAiIgCIiAIiIAiIgCp7zbRx6HxFD5hXCr75sRkZVnfGmyu9p5+q031+ZW4mUHh5KmqVXPvt7v89FrNvcvOyi08M6Cg3ydGZANqxbaGnaFzL7U47VoxqMGSqOw9qN6e1G8LkfaneV77U7ym0eUdb7UbwgkG9cl7U7ytrLW4bUwPKOndKBtUae2AKidbXHatTpSdqYCrLCa2VUGSaq1Eryqk2KKRlVXvZy5mTmRz8VAGtBBpmauPUVb4qhHj891F9D7PWIwwNa4UcaudwLs6dBQdF0tBVluTXBW1U8JJGu7rgjhkEjHPrhLSCW0INDsA3K2RF1UklhFBvIREUgIiIAiIgCIiAIiIAiIUBQdoOz/tf9yOgk2jQP+juP+DkbTYZI3YHscHHMClagbiMiu+dbsXd0+LfyG7iqe8mROzkPUuz8SuXrJ0N+svp/ktUSmvsce5pXhYdVaSPs9aMJedzQXHJI7smm/lwOAOWJ/ugV2mudOQKp11Tk+Istu6KXU2WPsxaHgOo1gPxHOhFa4QDTqpZ7IzU70ZPNw+S6+xw4I2MJrha1td9ABXyW5dhaWpdig9RY+5wz+y84FcLXcGvFf6gB5qPaLinaK+ydvywu8mklfQUR6WprGCVqLPU+UyNLSWkEEagggjmDmFjVfULXYY5RSRjXU0qMxyOxc/evZiINxR4mnE0ULi5tCQDrU7VTs8P7xZvhq/mRx+JKq7/04/e3zVp2dupscxL2hzsALTmcJBIdQHfUeCqaepWT2tm6y5RjlGHZm4DUTSgihqxhyNficNnALrERd2EFBbUc2UnJ5YREWRiEREAREQBERAEREAREQBeOFciiICAbmhzGEgHYHyAZbAA7IcEguOzszELK1rVwxHxdUoijCBNjja0UaABuAAHgFmiKQEREAREQBYTMxNI0qNd3FEQHOXhbzEKuaDqBRx7wrvGQy1Uy6IpHSGR2ENDS0NBJNXEEkkgZZBEWiGlqhLfFcmbnJrDLpERbzAIiIAiIgCIiAIiIAiIgCIiA/9k=" 
+             alt="포켓몬 이미지"
+             title="포켓몬 이미지"
+             width="300"
+             border="3"
+        >
+    </div>
+
+    <hr>
+
+    <h2>이미지가 없을 때</h2>
+    <p>alt 텍스트가 화면에 표시됩니다.</p>
+    <img src="img/없는이미지.png" alt="이미지 없음" title="이미지 없음">
+
+    <div style="height: 500px;"></div>
+</body>
+</html>
