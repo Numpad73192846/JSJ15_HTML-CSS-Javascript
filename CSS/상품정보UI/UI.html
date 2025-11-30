@@ -5,23 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/UI.css">
+    <style>
+       @font-face {
+           font-family: 'Poppins';
+           src: url('fonts/Poppins,Roboto/Poppins/Poppins-Regular.ttf');
+           font-weight: 400;
+       }     
+       @font-face {
+           font-family: 'Poppins';
+           src: url('fonts/Poppins,Roboto/Poppins/Poppins-Medium.ttf');
+           font-weight: 500;
+       }     
+       @font-face {
+           font-family: 'Poppins';
+           src: url('fonts/Poppins,Roboto/Poppins/Poppins-SemiBold.ttf');
+           font-weight: 600;
+       }     
+       @font-face {
+           font-family: 'Poppins';
+           src: url('fonts/Poppins,Roboto/Poppins/Poppins-Bold.ttf');
+           font-weight: 700;
+       }     
+       @font-face {
+           font-family: 'Roboto';
+           src: url('fonts/Poppins,Roboto/Roboto/Roboto-VariableFont_wdth,wght.ttf');
+           font-weight: 100 900;
+       }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h4 class="shopping">Free shopping</h4>
-            <h2 class="name">Razer Kraken Kitty Edt Gaming Headset Quartz</h2>
-            <h6 class="price1">1 599,-</h6>
-            <h1 class="price2">799,-</h1>
-            <h5 class="other1">The offer is valid until April 3 or as long as stock lasts!</h5>
-            <button class="Add" >Add to cart</button>
-            <h5 class="other2">50+ pcs. in stock.</h5>
-            <button class="Addc" >Add to cart</button>
-            <button class="wish" >Add to wishlist</button>
-        </div>
-        <div class="content">
-            <img src="img/image 1.png" alt="상품1">
-        </div>
-    </div>
+    <section class="product-list">
+        <article class="product">
+            <div class="img">
+                <img class="img1" src="img/image 1.png" alt="상품1">
+            </div>
+            <div class="content">
+                <header class="title-box">
+                    <p class="shopping">Free shipping</p>
+                    <h2 class="name">Razer Kraken Kitty Edt Gaming Headset Quartz</h2>
+                </header>
+                <div class="info-box">
+                    <p class="price" id="price1">1 599,-</p>
+                    <p class="price" id="price2">799,-</p>
+                    <p class="other">The offer is valid until April 3 or as long as stock lasts!</p>
+                </div>
+                <footer class="purchase">
+                    <div class="purchase-top">
+                        <button class="Add" >Add to cart</button>
+                    </div>
+                    <div class="product-stock">
+                        <div class="circle"></div>
+                        <p class="other">50+ pcs. in stock.</p>
+                    </div>
+                    <div class="purchase-bottom">
+                        <button class="Add" >
+                            <img src="img/add.png" class="icon" alt="add이미지">
+                            Add to cart
+                        </button>
+                        <button class="wish" >
+                            <img src="img/wish.png" class="icon" alt="wish이미지">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
