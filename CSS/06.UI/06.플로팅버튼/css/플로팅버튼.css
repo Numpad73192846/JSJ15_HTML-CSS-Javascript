@@ -1,10 +1,10 @@
-/* html {
+html {
 	scroll-behavior: smooth;
 }
 
 body {
 	background-color: rgb(216, 216, 216);
-} */
+}
 
 .floating {
 	display: flex;
@@ -27,7 +27,7 @@ body {
 	color: white;
 }
 
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -36,7 +36,7 @@ body {
 a {
 	text-decoration: none;
 	color: black;
-}
+} */
 
 /* .floating {
 	position: fixed;
@@ -59,7 +59,7 @@ a {
 	user-select: none;
 } */
 
-section {
+/* section {
 	min-height: 600px;
 	width: 100%;
 }
@@ -70,4 +70,4 @@ section.bg {
 
 html {
 	scroll-behavior: smooth;
-}
+} */

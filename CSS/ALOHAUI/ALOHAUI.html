@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aloha</title>
 	<link rel="stylesheet" href="css/ALOHAUI.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<!-- 사이드바 토글 체그박스 -->
@@ -12,33 +13,78 @@
 
 	<div class="container">
 		<section id="sec1">
-			<div class="content">
-				<h3>세련된 UI 컴포넌트</h3>
-				<p class="other">오프캔버스, 탭, 플로팅 버튼 등 UI 요소들을 조합한 메인 예시입니다. 깔끔한 레이아웃과 감각적인 컬러로 빠르게 시작하세요.</p>
-				<div class="main-btn">
-					<button class="btn">
-						지금 살펴보기
-					</button>
-					<button class="tab-btn">
-						탭 보기
-					</button>
+			<div class="box header-box" >
+				<div class="content">
+					<h3>세련된 UI 컴포넌트</h3>
+					<p class="other">오프캔버스, 탭, 플로팅 버튼 등 UI 요소들을 조합한 메인 예시입니다. 깔끔한 레이아웃과 감각적인 컬러로 빠르게 시작하세요.</p>
+					<div class="main-btn">
+						<button class="btn">
+							지금 살펴보기
+						</button>
+						<button class="tab-btn">
+							탭 보기
+						</button>
+					</div>
+				</div>
+				<img src="img/hero.svg" alt="img">
+			</div>
+		</section>
+		<section id="sec2">
+			<div class="box other-box">
+				<div class="small-box">
+					<p class="btn-title">오프캔버스</p>
+					<p class="btn-other">체크박스 기반으로 부드럽게 열리고 닫히는 네비게이션.</p>
+				</div>
+				<div class="small-box">
+					<p class="btn-title">탭</p>
+					<p class="btn-other">라디오 버튼을 이용한 순수 CSS 탭 전환.</p>
+				</div>
+				<div class="small-box">
+					<p class="btn-title">플로팅 버튼</p>
+					<p class="btn-other">핵심 액션에 빠르게 접근하는 둥둥 뜨는 버튼.</p>
 				</div>
 			</div>
-			<img src="img/hero.svg" alt="img">
+			<div class="box tab-box">
+				<!-- 탭 버튼 -->
+				<input checked type="radio" name="tab" id="tab1">
+				<label for="tab1" class="tab-item">탭 1</label>
+
+				<input type="radio" name="tab" id="tab2">
+				<label for="tab2" class="tab-item">탭 2</label>
+
+				<input type="radio" name="tab" id="tab3">
+				<label for="tab3" class="tab-item">탭 3</label>
+
+				<!-- 탭 내용 -->
+				<div class="tab-content" id="content1">
+					<img src="img/1.jpg" alt="이미지1" width="500">
+				</div>
+
+				<div class="tab-content" id="content2">
+					<img src="img/2.jpg" alt="이미지2" width="500">
+				</div>
+
+				<div class="tab-content" id="content3">
+					<img src="img/3.jpg" alt="이미지3" width="500">
+				</div>
+			</div>
+			<div class="box">
+				<p class="foot">© 2025 ALOHA UI, All rights reserved.</p>
+			</div>
 		</section>
 	</div>
-
+	
 	<header>
 		<!-- util -->
 		 <div class="util">
-			<ul class="util-menu container">
+			<ul class="util-menu box">
 				<li><a href="">로그인</a></li>
 				<li><a href="">회원가입</a></li>
 			</ul>
 		 </div>
 
 		<!-- menu -->
-		<div class="menu container">
+		<div class="menu box">
 			<div class="user">
 				<a href=""><img src="img/hero.svg" alt="">ALOHA UI</a>
 			</div>
@@ -99,6 +145,13 @@
 				</a>
 			</li>
 		</ul>
+	</div>
+
+		<!-- 플로팅 버튼 -->
+	<div class="floating">
+		<a href="#top">
+			<i class="fa fa-arrow-circle-up"></i>
+		</a>
 	</div>
 </body>
 </html>
