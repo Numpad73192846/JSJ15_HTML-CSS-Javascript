@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comment</title>
+	<style>
+		body {
+			margin: 0;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.container {
+			width: 350px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.card {
+			width: 350px;
+			height: 120px;
+			padding: 10px;
+			background: white;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+		}
+
+		ul {
+			display: flex;
+			padding: 0;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+		}
+
+		#content {
+			height: 50px;
+		}
+
+		button {
+			width: 70px;
+			height: 30px;
+			align-self: flex-end;
+			background: none;
+			border: 1px solid cornflowerblue;
+			color: cornflowerblue;
+			font-size: 12px;
+			border-radius: 5px;
+		}
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			
+			const btnComment = document.getElementById("commentBtn")
+			
+			btnComment.addEventListener("click", () => {
+				const card = document.createElement("div")
+				card.className = "card"
+
+				const ul = document.createElement("ul")
+				const li = document.createElement("li")
+
+				const date = new Date().toISOString().slice(0,10)
+
+				const img = document.createElement("img")
+				img.src = "img/avatar.png"
+
+				const writerTag = document.getElementById("writer").value
+				const content = document.getElementById("content").value
+				const createAM = document.createElement("span")
+				createAM.textContent = date
+				console.log(date);
+
+				const writer = document.createElement("span")
+				writer.textContent = writerTag
+
+				const comment = document.createElement("p")
+				comment.textContent = content
+
+				card.appendChild(ul)
+				ul.appendChild(li)
+				li.appendChild(img)
+				li.appendChild(writer)
+				ul.appendChild(createAM)
+				card.appendChild(comment)
+				
+				document.body.prepend(card)
+
+				document.getElementById("writer").value = ""
+				document.getElementById("content").value = ""
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h3>댓글 작성</h3>
+		<input type="text" name="input" id="writer" placeholder="이름">
+		<textarea name="textarea" id="content" placeholder="내용을 입력해주세요"></textarea>
+		<button id="commentBtn">작성</button>
+	</div>
+</body>
+</html>

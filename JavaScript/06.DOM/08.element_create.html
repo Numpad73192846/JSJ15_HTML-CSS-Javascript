@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>element create</title>
+	<style>
+		.container {
+			width: 100%;
+			max-width: 800px;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		input {
+			width: 100%;
+			padding: 20px;
+			font-size: 20px;
+			box-sizing: border-box;
+			border-radius: 5px;
+		}
+
+		.input-box {
+			margin-bottom: 10px;
+			padding: 0 20px;
+		}
+
+		button {
+			width: calc(100% - 40px);
+			height: 40px;
+			font-size: 20px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.card {
+			width: 170px;
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			display: inline-block;
+			text-align: center;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			position: relative;
+		}
+
+		.card img { 
+			width: 100%;
+			border-radius: 8px;
+		}
+
+		.price {
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		.delete-btn {
+			background-color: #ff4d4d;
+			color: white;
+			border: none;
+			padding: 5px 8px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>상품 카드 생성</h2>
+	
+		<div class="input-box">
+			<input type="text" id="productName" placeholder="상품명 입력">
+		</div>
+		<div class="input-box">
+			<input type="text" id="productImg" placeholder="이미지 URL 입력">
+		</div>
+		<div class="input-box">
+			<input type="text" id="productPrice" placeholder="가격 입력">
+		</div>
+
+		<div>
+			<button id="add">상품 추가</button>
+		</div>
+	
+		<div id="productList"></div>
+	</div>
+
+	<script>
+		// 상품 추가 버튼 클릭 이벤트
+		const $addBtn = document.getElementById('add')
+
+		$addBtn.addEventListener("click", () => {
+			const name = document.getElementById("productName").value
+			const img = document.getElementById("productImg").value
+			const price = document.getElementById("productPrice").value
+
+			if ( !name || !img || !price ) {
+				alert("상품명, 이미지URL, 가격을 모두 입력해 주세요")
+				return
+			}
+
+			// 상품 리스트
+			const $productList = document.getElementById("productList")
+
+			// 카드 요소 생성
+			const card = document.createElement("div")
+			card.className = "card"
+			
+			const imgTag = document.createElement("img")
+			imgTag.src = img
+
+			const title = document.createElement("h3")
+			title.className = "name"
+
+			const priceTag = document.createElement("p")
+			priceTag.className = "price"
+			priceTag.textContent = price + "원"
+			
+			
+			// 삭제 버튼
+			const deleteBtn = document.createElement("button")
+			deleteBtn.className = "delete-btn"
+			deleteBtn.textContent = "삭제"
+
+			// 삭제 버튼 클릭 시 카드 제거
+			deleteBtn.addEventListener("click", () => {
+				$productList.removeChild(card)
+			})
+			
+			// 카드 조립
+			// (이미지), (상품명), (가격), (삭제)
+			card.appendChild(imgTag)
+			card.appendChild(title)
+			card.appendChild(priceTag)
+			card.appendChild(deleteBtn)
+
+			// 상품 목록에 카드 추가
+			$productList.appendChild(card)
+
+			// 입력 초기화
+			document.getElementById("productName").value = ""
+			document.getElementById("productImg").value = ""
+			document.getElementById("productPrice").value = ""
+		})
+	</script>
+</body>
+</html>
