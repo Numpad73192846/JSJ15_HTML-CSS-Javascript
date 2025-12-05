@@ -62,22 +62,23 @@
 			const btnComment = document.getElementById("commentBtn")
 			
 			btnComment.addEventListener("click", () => {
+
+				// 카드 생성
 				const card = document.createElement("div")
 				card.className = "card"
-
+				const img = document.createElement("img")
+				img.src = "img/avatar.png"
 				const ul = document.createElement("ul")
 				const li = document.createElement("li")
 
-				const date = new Date().toISOString().slice(0,10)
-
-				const img = document.createElement("img")
-				img.src = "img/avatar.png"
-
+				// 값 가져오기
 				const writerTag = document.getElementById("writer").value
 				const content = document.getElementById("content").value
+				const date = new Date().toISOString().slice(0,10)
+
+				// Node생성 후 값 넣기
 				const createAM = document.createElement("span")
 				createAM.textContent = date
-				console.log(date);
 
 				const writer = document.createElement("span")
 				writer.textContent = writerTag
@@ -85,6 +86,7 @@
 				const comment = document.createElement("p")
 				comment.textContent = content
 
+				// 카드 조합
 				card.appendChild(ul)
 				ul.appendChild(li)
 				li.appendChild(img)
@@ -92,8 +94,10 @@
 				ul.appendChild(createAM)
 				card.appendChild(comment)
 				
+				// 카드 출력
 				document.body.prepend(card)
 
+				// 입력 초기화
 				document.getElementById("writer").value = ""
 				document.getElementById("content").value = ""
 			})
